@@ -40,6 +40,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repo](https://github.com/cessnar516/FM-3-col-card-component)
+- Live Site URL: [GitHub Pages](https://cessnar516.github.io/FM-3-col-card-component/)
 
 ## My process
 
