@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repo](https://github.com/cessnar516/frontend-masters-practice/tree/master/3-column-preview-card-component)
+- Solution URL: [GitHub Repo](https://github.com/cessnar516/FM-3-col-card-component)
 
 ## My process
 
