@@ -1,0 +1,82 @@
+// Colors from style guide
+$sedans-color: hsl(31, 77%, 52%)
+$suvs-color: hsl(184, 100%, 22%)
+$luxury-color: hsl(179, 100%, 13%)
+$trans-white: hsla(0, 0%, 100%, 0.75)
+$very-light-gray: hsl(0, 0%, 95%)
+$footer-link-color: hsl(228, 45%, 44%)
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap")
+$big-shoulders: "Big Shoulders Display", sans-serif
+$lexend: "Lexend Deca", sans-serif
+$body-font-size: 15px
+
+// Screen sizes
+$mobile-screen: 375px
+$desktop-screen: 1440px
+  
+body
+  max-width: 900px
+  width: 90%
+  margin: 0 auto
+  padding: 4rem 0
+  font-size: $body-font-size
+  font-family: $lexend
+  background-color: $very-light-gray
+main
+  border-radius: 10px
+  overflow: hidden
+  @media screen and (min-width: $desktop-screen) 
+    display: flex
+.card
+  padding: 3rem
+  color: $trans-white
+  h2
+    font-family: $big-shoulders
+    color: $very-light-gray
+    font-size: 2.5rem
+    text-transform: uppercase
+  p
+    line-height: 1.8
+    margin-bottom: 2.2rem
+    @media screen and (min-width: $desktop-screen)
+      margin-bottom: 6rem
+  a
+    display: inline-block
+    text-decoration: none
+    background-color: $very-light-gray
+    padding: 10px 20px
+    border-radius: 20px
+    border: 2px solid $very-light-gray
+
+#sedans
+  background-color: $sedans-color
+  a
+    color: $sedans-color
+    &:hover
+      background-color: $sedans-color
+      color: $very-light-gray
+
+#suvs
+  background-color: $suvs-color
+  a
+    color: $suvs-color
+    &:hover
+      background-color: $suvs-color
+      color: $very-light-gray
+
+#luxury
+  background-color: $luxury-color
+  a
+    color: $luxury-color
+    &:hover
+      background-color: $luxury-color
+      color: $very-light-gray
+  
+footer
+  font-size: .7rem
+  text-align: center
+  margin-top: 1rem
+  a
+    color: $footer-link-color
