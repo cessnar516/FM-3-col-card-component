@@ -11,6 +11,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Accessibility Note](#accessibility-note)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -60,6 +61,10 @@ The styles for the project were written in SASS utilizing variables. This practi
 Flexbox and media queries were used to display the cards in three columns on desktop-sized screens. 
 
 Initially, I achieved the rounded corners on the outside of the cards by targeting the first and last card and adjusted the border-radius with a media query for the different screen sizes; however, I discovered this styling could be more easily applied to the main element. When applied to the main, no adjustment to the border radius is needed, but you must set the overflow to hidden for the rounded corners to show up. 
+
+### Acessibility Note
+
+The orange color specified in the style guide for the Sedans card did not provide the contrast needed to comply with WCAG AA requirements, so I adjusted that color as well as the light gray for the headings and the transparent white text for the card paragraphs. Having sufficient color contrast is important to ensure individuals with low vision and/or color blindness are able to read the information. 
 
 ### Continued development
 

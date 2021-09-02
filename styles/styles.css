@@ -6,7 +6,7 @@ body {
   padding: 4rem 0;
   font-size: 15px;
   font-family: "Lexend Deca", sans-serif;
-  background-color: #f2f2f2;
+  background-color: #fafafa;
 }
 
 main {
@@ -21,11 +21,11 @@ main {
 
 .card {
   padding: 3rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.95);
 }
 .card h2 {
   font-family: "Big Shoulders Display", sans-serif;
-  color: #f2f2f2;
+  color: #fafafa;
   font-size: 2.5rem;
   text-transform: uppercase;
 }
@@ -41,21 +41,21 @@ main {
 .card a {
   display: inline-block;
   text-decoration: none;
-  background-color: #f2f2f2;
+  background-color: #fafafa;
   padding: 10px 20px;
   border-radius: 20px;
-  border: 2px solid #f2f2f2;
+  border: 2px solid #fafafa;
 }
 
 #sedans {
-  background-color: #e38826;
+  background-color: #a76116;
 }
 #sedans a {
-  color: #e38826;
+  color: #a76116;
 }
 #sedans a:hover {
-  background-color: #e38826;
-  color: #f2f2f2;
+  background-color: #a76116;
+  color: #fafafa;
 }
 
 #suvs {
@@ -66,7 +66,7 @@ main {
 }
 #suvs a:hover {
   background-color: #006970;
-  color: #f2f2f2;
+  color: #fafafa;
 }
 
 #luxury {
@@ -77,7 +77,7 @@ main {
 }
 #luxury a:hover {
   background-color: #004241;
-  color: #f2f2f2;
+  color: #fafafa;
 }
 
 footer {
