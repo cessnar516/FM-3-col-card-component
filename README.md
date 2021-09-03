@@ -32,11 +32,11 @@ Users should be able to:
 
 #### Desktop View
 
-![](./images/desktop-screenshot.jpg)
+![](./images/screenshot-desktop.jpg)
 
 #### Mobile View
 
-![](./images/mobile-screenshot.jpg)
+![](./images/screenshot-mobile.jpg)
 
 ### Links
 
@@ -54,7 +54,7 @@ Users should be able to:
 
 ### What I learned
 
-In this project, I practiced using JavaScript to generate the HTML for the cards by creating a Card constructor class (see Card.js). Each Card object is populated with an id, image source URL, name, text, and link URL (see data.js). In the script.js file, the Card objects are mapped into an array and the data for each card is used to generate an article element with a class of card, an id with the value from the object, and an aria-label with the name from the object. Next, the image, card name (h2), paragraph text, and link are added to the inner HTML of each section. Finally, a for each loop is used to append the new sections to the main element of the document. The images for the cards are given empty alt attributes to signify to assistive technology that they are decorative elements, and descriptive aria labels are added to the links for accessibility purposes. 
+In this project, I practiced using JavaScript to generate the HTML for the cards by creating a Card constructor class (see Card.js). Each Card object is populated with an id, image source URL, name, text, and link URL (see data.js). In the script.js file, the Card objects are mapped into an array and the data for each card is used to generate an article element with a class of card, an id with the value from the object, and an aria-label with the name from the object. Next, the image, card name (h2), paragraph text, and link are added to the inner HTML of each section. Finally, a for each loop is used to append the new sections to the div with a class of cards. The images for the cards are given empty alt attributes to signify to assistive technology that they are decorative elements, and descriptive aria labels are added to the links for accessibility purposes. 
 
 The styles for the project were written in SASS utilizing variables. This practice allows shared properties, such as colors and fonts, to be easily updated globally. 
 
