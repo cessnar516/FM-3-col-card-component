@@ -17,16 +17,28 @@ $mobile-screen: 375px
 $desktop-screen: 1440px
   
 body
-  max-width: 900px
+  max-width: 525px
   width: 90%
   margin: 0 auto
-  padding: 4rem 0
+  padding: 2rem 0
   font-size: $body-font-size
   font-family: $lexend
   background-color: $very-light-gray
-main
+  display: flex
+  flex-direction: column
+  align-items: center
+  @media screen and (min-width: $desktop-screen)
+    max-width: 900px
+    padding: 4rem 0
+h1
+  text-align: center
+  margin-bottom: 1em
+  @media screen and (min-width: $desktop-screen)
+    margin-bottom: 2em
+.cards
   border-radius: 10px
   overflow: hidden
+  margin: 0 auto
   @media screen and (min-width: $desktop-screen) 
     display: flex
 .card
@@ -54,7 +66,7 @@ main
   background-color: $sedans-color
   a
     color: $sedans-color
-    &:hover
+    &:hover, &:focus
       background-color: $sedans-color
       color: $very-light-gray
 
@@ -62,7 +74,7 @@ main
   background-color: $suvs-color
   a
     color: $suvs-color
-    &:hover
+    &:hover, &:focus
       background-color: $suvs-color
       color: $very-light-gray
 
@@ -70,13 +82,20 @@ main
   background-color: $luxury-color
   a
     color: $luxury-color
-    &:hover
+    &:hover, &:focus
       background-color: $luxury-color
       color: $very-light-gray
   
 footer
   font-size: .7rem
   text-align: center
-  margin-top: 1rem
+  margin-top: 2rem
+  @media screen and (min-width: $desktop-screen)
+    margin-top: 3rem
   a
     color: $footer-link-color
+    &:hover
+      text-decoration: none
+    &:focus
+      outline: 1px solid $footer-link-color
+      

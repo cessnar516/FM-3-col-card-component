@@ -3,10 +3,12 @@ import cardObjectArray from "./components/data.js";
 // Generate HTML from JavaScript objects
 
 const cardList = cardObjectArray.map((card) => {
-    // Create new section
-    let cardSection = document.createElement("section");
+    // Create new article
+    let cardSection = document.createElement("article");
     // Add class of card
     cardSection.classList.add("card");
+    // Add uniquie aria-label to each article for accessibility purposes
+    cardSection.setAttribute("aria-label", card.name);
     // Add id from Card object data
     cardSection.setAttribute("id", card.id);
     // Construct HTML for section - add empty alt tag to image and descriptive aria-label to link for accessibility
@@ -20,9 +22,9 @@ const cardList = cardObjectArray.map((card) => {
     return cardSection;
 });
 
-// Get document main element
-const main = document.querySelector("main");
-// Loop through the cards and append them to the main element
+// Get the card container element
+const cardsContainer = document.querySelector(".cards");
+// Loop through the cards and append them to the card container element
 cardList.forEach((card) => {
-    main.append(card);
+    cardsContainer.append(card);
 });
